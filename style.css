@@ -1,0 +1,479 @@
+body {
+  font-family: "Raleway", sans-serif;
+  width: fit-content;
+  max-width: 1440px;
+  margin: auto;
+}
+
+#bloc_page {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+h1,
+h2 {
+  font-weight: bold;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#ancre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 18px;
+}
+#logo img {
+  width: 100px;
+  height: 50px;
+}
+nav span {
+  font-size: 1.3em;
+  padding-bottom: 3px;
+  color: #0065fc;
+}
+
+nav a {
+  font-size: 1.3em;
+  padding-bottom: 3px;
+  color: black;
+  text-align: justify;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: none;
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+  padding-top: 40px;
+}
+nav p {
+  word-spacing: 30px;
+}
+
+.slogan h1 {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+form {
+  display: flex;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  width: 370px;
+  height: 42px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.map {
+  border: 1px solid #f2f2f2;
+  border-radius: 10px 0 0 10px;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-top: 12px;
+  width: 40px;
+  height: 40px;
+}
+input {
+  border: none;
+  width: 220px;
+  height: 40px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+#bouton {
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: #0065fc;
+  color: white;
+  width: 110px;
+  height: 40px;
+  font-weight: bold;
+}
+#search {
+  display: none;
+}
+/*Bloc Filtres*/
+
+#filtres {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#liens a {
+  text-decoration: none;
+  color: black;
+}
+
+#liens a:hover {
+  color: #0065fc;
+}
+
+#titre {
+  padding-top: 10px;
+  margin-right: 20px;
+}
+
+#filtres ul {
+  display: flex;
+  list-style-type: none;
+}
+
+#filtres li {
+  padding-right: 20px;
+}
+
+#filtres i {
+  color: #0065fc;
+  border: 1px solid #deebff;
+  border-radius: 30px;
+  background-color: #deebff;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+#eco,
+#famille,
+#romantique,
+#animaux {
+  border: 2px solid #f2f2f2;
+  border-radius: 30px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+#billet,
+#enfant,
+#coeur,
+#chien {
+  text-align: center;
+  padding-top: 7px;
+}
+
+#info {
+  color: #0065fc;
+  border: 2px solid #f2f2f2;
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  padding-left: 23px;
+}
+
+#reponse {
+  margin: 30px 0 30px 0;
+}
+
+/* hebergement et les plus populaires*/
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.main h2 {
+  margin-left: 43px;
+}
+
+/*Bloc Hébergements*/
+
+/*Fond*/
+#hebergements {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 20px 0 0 20px;
+  width: 65%;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+article img {
+  object-fit: cover;
+}
+
+#titre_hebergements,
+#suite {
+  margin-bottom: 20px;
+}
+
+#hebergements a {
+  text-decoration: none;
+  color: black;
+}
+
+#hebergements strong {
+  font-weight: bold;
+}
+
+#encarts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+#encarts figure {
+  width: 210px;
+  height: 180px;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px #7a7d7f; /*ou 0 4px 30px rgba(0 0 0 0.05)*/
+}
+
+.carte {
+  margin-bottom: 30px;
+}
+
+/*Taille des photos*/
+
+#photo_cannebiere,
+#photo_hduport,
+#photo_hlesmouettes,
+#photo_hdelamer,
+#photo_lepanier,
+#photo_hamina {
+  width: 224px;
+  height: 110px;
+  border: 3px solid white;
+  border-radius: 20px 20px 0 0;
+}
+
+/*Taille des légendes*/
+
+#legend1,
+#legend2,
+#legend3,
+#legend4,
+#legend5,
+#legend6 {
+  width: 214px;
+  height: 70px;
+  border: 3px solid white;
+  border-radius: 0 0 20px 20px;
+  color: black;
+  padding-left: 10px;
+  margin-top: -6px;
+  background-color: white;
+}
+
+/*Espace des étoiles*/
+
+#fig1 i,
+#fig3 i,
+#fig4 i,
+#fig5 i {
+  padding-top: 8px;
+}
+
+#fig2 i,
+#fig6 i {
+  color: #0065fc; /*Toutes les étoiles sont bleues*/
+  padding-top: 8px;
+}
+
+/*icônes bleues*/
+
+#fig1 span,
+#fig3 span,
+#fig4 span,
+#fig5 span {
+  color: #0065fc;
+}
+
+/*icônes grises*/
+
+#grise1,
+#grise2,
+#igrises,
+#grise3 {
+  color: #f2f2f2;
+}
+.viewmore {
+  margin-left: 43px;
+}
+/* bloc les plus populaires*/
+/*Fond*/
+aside {
+  background-color: #f2f2f2;
+  padding: 30px 0 0 30px;
+  border-radius: 20px;
+  width: 30%;
+}
+
+#encarts2 figure {
+  width: 290px;
+  height: 160px;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 6px #7a7d7f;
+}
+aside img {
+  object-fit: cover;
+  float: left;
+  left: 100px;
+}
+#photo_hsoleilmatin,
+#photo_aucoeurleau,
+#photo_htoutbleublanc {
+  width: 140px;
+  height: 150px;
+  border: 3px solid white;
+  border-radius: 20px 20px 0 0;
+}
+/*Espace des étoiles*/
+#fig7 i {
+  color: #0065fc; /*Toutes les étoiles sont bleues*/
+  padding-top: 8px;
+}
+#fig8 i,
+#fig9 i {
+  padding-top: 8px;
+}
+/*icônes bleues*/
+#fig8 span,
+#fig9 span {
+  color: #0065fc;
+}
+/*icones grise*/
+#grise4 {
+  color: #f2f2f2;
+}
+/*Taille des légendes*/
+#legend7,
+#legend8,
+#legend9 {
+  width: 270px;
+  height: 160px;
+  border: 3px solid white;
+  border-radius: 20px 20px;
+  color: black;
+  padding-left: 20px;
+  margin-top: -6px;
+  background-color: white;
+}
+
+.hostingpopular a {
+  text-decoration: none;
+  color: black;
+}
+
+/*bloc Activités à Marseille*/
+#photo_activites {
+  padding-left: -50px;
+  width: 80%;
+}
+.activitesmarseille figure {
+  width: 226px;
+  height: 180px;
+  border: 1px solid white;
+}
+.activitesmarseille a {
+  text-decoration: none;
+  color: black;
+}
+.activitesmarseille h2 {
+  margin-left: 50px;
+}
+#photo_activites img {
+  object-fit: cover;
+  border: 3px solid white;
+  border-radius: 20px 20px 0 0;
+}
+/*tailles images*/
+#photo_vieuxport {
+  width: 300px;
+  height: 400px;
+}
+#photo_fortpomegues,
+#photo_parclongchamp {
+  width: 250px;
+  height: 150px;
+}
+#photo_ilesfrioul,
+#photo_notredamegarde {
+  width: 250px;
+  height: 150px;
+}
+#photo_parccalanques {
+  width: 300px;
+  height: 400px;
+}
+
+#description1,
+#description4 {
+  width: 300px;
+  height: 30px;
+  border: 3px solid #f2f2f2;
+  border-radius: 0 0 20px 20px;
+  color: black;
+  background-color: white;
+}
+#description2,
+#description3,
+#description5,
+#description6 {
+  width: 250px;
+  height: 30px;
+  border: 3px solid #f2f2f2;
+  border-radius: 0 0 20px 20px;
+  color: black;
+  background-color: white;
+}
+
+#figure2 {
+  padding-left: 350px;
+  margin-top: -200px;
+}
+#figure3 {
+  padding-left: 350px;
+  margin-top: 70px;
+}
+#figure4 {
+  padding-left: 650px;
+  margin-top: -450px;
+}
+#figure5 {
+  padding-left: 1000px;
+  margin-top: -200px;
+}
+#figure6 {
+  padding-left: 1000px;
+  margin-top: 70px;
+}
+/*footer*/
+.renseignement {
+  width: 1300px;
+  height: 200px;
+  border: 1px solid white;
+  margin-top: 50px;
+  background-color: #f2f2f2;
+  margin-bottom: 100px;
+}
+#pied_de_page ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#pied_de_page a {
+  text-decoration: none;
+  color: black;
+}
+#pied_de_page {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 300px;
+  margin-left: 50px;
+}
