@@ -53,7 +53,7 @@ nav a:hover {
   text-decoration: none;
   color: #0065fc;
   border-top: 3px solid #0065fc;
-  padding-top: 40px;
+  padding-top: 33px;
 }
 nav p {
   word-spacing: 30px;
@@ -455,25 +455,82 @@ aside img {
 }
 /*footer*/
 .renseignement {
-  width: 1300px;
-  height: 200px;
+  width: 1500px;
+  height: 150px;
   border: 1px solid white;
   margin-top: 50px;
   background-color: #f2f2f2;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
-#pied_de_page ul {
+.pied_de_page ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-#pied_de_page a {
+.pied_de_page a {
   text-decoration: none;
   color: black;
 }
-#pied_de_page {
+.pied_de_page {
   display: flex;
   justify-content: space-between;
-  margin-right: 300px;
+  margin-right: 500px;
   margin-left: 50px;
+}
+/*responsive version mobile*/
+
+@media all and (max-width: 667px) {
+  body {
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  #bloc_page {
+    margin: 0px;
+    padding: 0px;
+  }
+  /* entête*/
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  #logo {
+    margin-top: 20px;
+  }
+  #logo img {
+    margin-left: 20px;
+  }
+  #ancre {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+  }
+  nav span {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
+  #accommodation,
+  #activities {
+    width: 50%;
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 10px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+  nav a:hover {
+    padding-top: 37px;
+    border-color: #0065fc;
+    color: #0065fc;
+  }
+
+  /* bloc recherche*/
 }
