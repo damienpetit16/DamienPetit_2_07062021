@@ -82,7 +82,7 @@ form {
   text-align: center;
   padding-top: 12px;
   width: 40px;
-  height: 40px;
+  height: 30px;
 }
 input {
   border: none;
@@ -103,6 +103,7 @@ input {
 #search {
   display: none;
 }
+
 /*Bloc Filtres*/
 
 #filtres {
@@ -297,8 +298,9 @@ article img {
 
 #grise1,
 #grise2,
-#igrises,
-#grise3 {
+#grise3,
+#grise4,
+#grise5 {
   color: #f2f2f2;
 }
 .viewmore {
@@ -348,7 +350,8 @@ aside img {
   color: #0065fc;
 }
 /*icones grise*/
-#grise4 {
+#grise6,
+#grise7 {
   color: #f2f2f2;
 }
 /*Taille des légendes*/
@@ -514,7 +517,7 @@ aside img {
   }
   nav span {
     position: absolute;
-    top: 40px;
+    top: 50px;
     right: 20px;
   }
   #accommodation,
@@ -524,13 +527,95 @@ aside img {
     padding-bottom: 10px;
     margin: 0px;
     padding: 0px;
-    text-align: center;
+    margin-left: 40px;
   }
   nav a:hover {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
+  #accommodation,
+  #activities:hover {
     padding-top: 37px;
     border-color: #0065fc;
-    color: #0065fc;
+    /*color: #0065fc;*/
   }
 
   /* bloc recherche*/
+  .slogan {
+    margin-left: 20px;
+  }
+  .barre_de_recherche {
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+  #text_rechercher {
+    display: none;
+  }
+  #search {
+    display: block;
+  }
+  #bouton {
+    width: 20%;
+    border-radius: 10px;
+  }
+
+  form {
+    width: 80%;
+    margin-top: 30px;
+  }
+  input {
+    width: 70%;
+  }
+
+  /* bloc filtres*/
+  #filtres {
+    flex-wrap: wrap;
+  }
+  #liens ul {
+    flex-wrap: wrap;
+  }
+  #lien li {
+    margin-bottom: 10px;
+  }
+  #titre {
+    margin-bottom: 20px;
+  }
+  /* bloc hébergement*/
+  .main {
+    flex-direction: column-reverse;
+    margin: 0;
+    width: 100%;
+  }
+  #hebergements {
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+  }
+  #photo_cannebiere,
+  #photo_hduport,
+  #photo_hlesmouettes,
+  #photo_hdelamer,
+  #photo_lepanier,
+  #photo_hamina {
+    width: 100%;
+  }
+  /* bloc plus populaires*/
+  #pluspopulaires {
+    flex-direction: column;
+    width: 100%;
+  }
+  #pluspopulaires h2 {
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+  #pluspopulaires figure {
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  .hostingpopular {
+    background-color: #f2f2f2;
+    border-radius: 0px;
+    width: 100%;
+    height: 40%;
+  }
 }
