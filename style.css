@@ -580,6 +580,7 @@ aside img {
   #titre {
     margin-bottom: 20px;
   }
+
   /* bloc hébergement*/
   .main {
     flex-direction: column-reverse;
@@ -590,6 +591,7 @@ aside img {
     flex-direction: column;
     background-color: white;
     width: 100%;
+    padding: 0px;
   }
   #photo_cannebiere,
   #photo_hduport,
@@ -597,7 +599,7 @@ aside img {
   #photo_hdelamer,
   #photo_lepanier,
   #photo_hamina {
-    width: 100%;
+    width: 300px;
   }
   /* bloc plus populaires*/
   #pluspopulaires {
@@ -613,9 +615,59 @@ aside img {
     margin-bottom: 10px;
   }
   .hostingpopular {
-    background-color: #f2f2f2;
     border-radius: 0px;
     width: 100%;
-    height: 40%;
+  }
+  /*bloc activité*/
+  .activitesmarseilles {
+    margin: 0px;
+    padding: 0px;
+  }
+  #photo_vieuxport,
+  #photo_fortpomegues,
+  #photo_parclongchamp,
+  #photo_ilesfrioul,
+  #photo_notredamegarde,
+  #photo_parccalanques {
+    width: 300px;
+    height: 110px;
+  }
+  #description1,
+  #description2,
+  #description3,
+  #description4,
+  #description5,
+  #description6 {
+    width: 300px;
+    height: 30px;
+  }
+  #figure2 {
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+  #figure3 {
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+  #figure4 {
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+  #figure5 {
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+  #figure6 {
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+  /*footer*/
+  .pied_de_page {
+    width: 100%;
+    flex-direction: column;
+  }
+  .renseignement {
+    width: 100%;
+    height: 350px;
   }
 }
