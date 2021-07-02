@@ -36,7 +36,38 @@ header {
   width: 100px;
   height: 50px;
 }
-nav span {
+#ancres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px; /* pas toujours nécessaire si hebergements et activités  trop bas */
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 45px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+  padding-top: 27px;
+}
+
+#inscription {
+  color: #0065fc;
+  font-weight: bold;
+  padding-top: 15px;
+}
+/*nav span {
   font-size: 1.3em;
   padding-bottom: 3px;
   color: #0065fc;
@@ -56,8 +87,7 @@ nav a:hover {
   padding-top: 33px;
 }
 nav p {
-  word-spacing: 30px;
-}
+  word-spacing: 30px;*/
 
 .slogan h1 {
   font-weight: bold;
@@ -507,7 +537,49 @@ aside img {
   #logo img {
     margin-left: 20px;
   }
-  #ancre {
+  #ancres {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    width: 100%;
+    padding: 0px;
+  }
+
+  nav li {
+    width: 50%;
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 10px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  nav span {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
+
+  nav a:hover {
+    padding-top: 37px;
+  }
+
+  nav li a:hover {
+    border-top: none;
+  }
+
+  nav li:hover {
+    border-color: #0065fc;
+    color: #0065fc;
+  }
+
+  /* #ancre {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     width: 100%;
@@ -536,9 +608,8 @@ aside img {
   #accommodation,
   #activities:hover {
     padding-top: 37px;
-    border-color: #0065fc;
-    /*color: #0065fc;*/
-  }
+    border-color: #0065fc;*/
+  /*color: #0065fc;*/
 
   /* bloc recherche*/
   .slogan {
@@ -591,6 +662,7 @@ aside img {
     flex-direction: column;
     background-color: white;
     width: 100%;
+    margin: 0px;
     padding: 0px;
   }
   #photo_cannebiere,
@@ -669,5 +741,320 @@ aside img {
   .renseignement {
     width: 100%;
     height: 350px;
+  }
+}
+/* responsive version tablette*/
+@media all and (max-width: 1024px) {
+  body {
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  #bloc_page {
+    margin: 0px;
+    padding: 0px;
+  }
+  /* entête*/
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  #logo {
+    margin-top: 20px;
+  }
+  #logo img {
+    margin-left: 20px;
+  }
+  #ancres {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    width: 100%;
+    padding: 0px;
+  }
+
+  nav li {
+    width: 50%;
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 10px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  nav span {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
+
+  nav a:hover {
+    padding-top: 37px;
+  }
+
+  nav li a:hover {
+    border-top: none;
+  }
+
+  nav li:hover {
+    border-color: #0065fc;
+    color: #0065fc;
+  }
+  /* bloc recherche*/
+  .slogan {
+    margin-left: 20px;
+  }
+  .barre_de_recherche {
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+  #search {
+    display: none;
+  }
+  #bouton {
+    width: 20%;
+    border-radius: 10px;
+  }
+
+  form {
+    width: 80%;
+    margin-top: 30px;
+  }
+  input {
+    width: 70%;
+  }
+
+  /* bloc filtres*/
+  #filtres {
+    flex-wrap: wrap;
+  }
+  #liens ul {
+    flex-wrap: wrap;
+  }
+  #lien li {
+    margin-bottom: 10px;
+  }
+  #titre {
+    margin-bottom: 20px;
+  }
+
+  /* bloc hébergement*/
+  .main {
+    margin: 0;
+    width: 100%;
+  }
+  #hebergements {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 20px 0 0 20px;
+    width: 65%;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  article img {
+    object-fit: cover;
+  }
+
+  #titre_hebergements,
+  #suite {
+    margin-bottom: 20px;
+  }
+
+  #hebergements a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #hebergements strong {
+    font-weight: bold;
+  }
+
+  #encarts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+
+  #encarts figure {
+    width: 210px;
+    height: 180px;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px #7a7d7f; /*ou 0 4px 30px rgba(0 0 0 0.05)*/
+  }
+
+  .carte {
+    margin-bottom: 30px;
+  }
+  #photo_cannebiere,
+  #photo_hduport,
+  #photo_hlesmouettes,
+  #photo_hdelamer,
+  #photo_lepanier,
+  #photo_hamina {
+    width: 224px;
+    height: 110px;
+    border: 3px solid white;
+    border-radius: 20px 20px 0 0;
+  }
+  /* bloc plus populaires*/
+
+  #pluspopulaires h2 {
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+  #pluspopulaires figure {
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  .hostingpopular {
+    border-radius: 0px;
+    width: 30%;
+  }
+  /*bloc activité*/
+  #photo_activites {
+    padding-left: -50px;
+    width: 80%;
+  }
+  .activitesmarseille figure {
+    width: 226px;
+    height: 180px;
+    border: 1px solid white;
+  }
+  .activitesmarseille a {
+    text-decoration: none;
+    color: black;
+  }
+  .activitesmarseille h2 {
+    margin-left: 50px;
+  }
+  #photo_activites img {
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 20px 20px 0 0;
+  }
+  /*tailles images*/
+  #photo_vieuxport {
+    width: 300px;
+    height: 400px;
+  }
+  #photo_fortpomegues,
+  #photo_parclongchamp {
+    width: 250px;
+    height: 150px;
+  }
+  #photo_ilesfrioul,
+  #photo_notredamegarde {
+    width: 250px;
+    height: 150px;
+  }
+  #photo_parccalanques {
+    width: 300px;
+    height: 400px;
+  }
+
+  #description1,
+  #description4 {
+    width: 300px;
+    height: 30px;
+    border: 3px solid #f2f2f2;
+    border-radius: 0 0 20px 20px;
+    color: black;
+    background-color: white;
+  }
+  #description2,
+  #description3,
+  #description5,
+  #description6 {
+    width: 250px;
+    height: 30px;
+    border: 3px solid #f2f2f2;
+    border-radius: 0 0 20px 20px;
+    color: black;
+    background-color: white;
+  }
+
+  #figure2 {
+    padding-left: 350px;
+    margin-top: -200px;
+  }
+  #figure3 {
+    padding-left: 350px;
+    margin-top: 70px;
+  }
+  #figure4 {
+    padding-left: 650px;
+    margin-top: -450px;
+  }
+  #figure5 {
+    padding-left: 1000px;
+    margin-top: -200px;
+  }
+  #figure6 {
+    padding-left: 1000px;
+    margin-top: 70px;
+  }
+  /*footer*/
+  .renseignement {
+    width: 1500px;
+    height: 150px;
+    border: 1px solid white;
+    margin-top: 50px;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+  }
+  .pied_de_page ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .pied_de_page a {
+    text-decoration: none;
+    color: black;
+  }
+  .pied_de_page {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 500px;
+    margin-left: 50px;
+  }
+  /*footer*/
+  .renseignement {
+    width: 1500px;
+    height: 150px;
+    border: 1px solid white;
+    margin-top: 50px;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+  }
+  .pied_de_page ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .pied_de_page a {
+    text-decoration: none;
+    color: black;
+  }
+  .pied_de_page {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 500px;
+    margin-left: 50px;
   }
 }
