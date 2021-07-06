@@ -405,7 +405,6 @@ aside img {
 
 /*bloc Activités à Marseille*/
 #photo_activites {
-  padding-left: -50px;
   width: 80%;
 }
 .activitesmarseille figure {
@@ -790,7 +789,6 @@ aside img {
   .main {
     margin: 0;
     width: 100%;
-    /*flex-direction: column-reverse;*/
   }
   #hebergements {
     background-color: #f2f2f2;
@@ -847,7 +845,7 @@ aside img {
   }
   .viewmore {
     margin-right: 50px;
-    margin-top: 50px;
+    margin-top: 25px;
   }
   /* bloc plus populaires*/
   #pluspopulaires {
@@ -856,11 +854,12 @@ aside img {
   }
   #pluspopulaires h2 {
     margin: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   #pluspopulaires figure {
     margin: 0px;
-    margin-bottom: 10px;
+    margin-top: 60px;
+    padding-bottom: 40px;
   }
   .hostingpopular {
     border-radius: 0px;
@@ -874,24 +873,20 @@ aside img {
   }
   #encarts2 figure {
     width: 200px;
-    height: 100px;
+    height: 80px;
     border: 1px solid white;
     border-radius: 20px;
     box-shadow: 1px 1px 6px #7a7d7f;
-    margin-bottom: 50px;
   }
   aside img {
     object-fit: cover;
     float: left;
     left: 100px;
   }
-  #fig7 {
-    margin-bottom: 50px;
-  }
   /*bloc activité*/
 
   .activitesmarseille {
-    padding-top: 55px;
+    padding-top: 40px;
     width: 100%;
   }
   .activitesmarseille h2 {
@@ -958,7 +953,7 @@ aside img {
   }
   #figure4 {
     padding-left: 600px;
-    margin-top: -450px;
+    margin-top: -410px;
   }
   #figure5 {
     padding-left: 900px;
@@ -970,7 +965,6 @@ aside img {
   }
   /*footer*/
   .renseignement {
-    /*width: 1500px;*/
     height: 150px;
     border: 1px solid white;
     margin-top: 50px;
