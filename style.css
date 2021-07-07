@@ -67,27 +67,6 @@ nav a:hover {
   font-weight: bold;
   padding-top: 15px;
 }
-/*nav span {
-  font-size: 1.3em;
-  padding-bottom: 3px;
-  color: #0065fc;
-}
-
-nav a {
-  font-size: 1.3em;
-  padding-bottom: 3px;
-  color: black;
-  text-align: justify;
-  text-decoration: none;
-}
-nav a:hover {
-  text-decoration: none;
-  color: #0065fc;
-  border-top: 3px solid #0065fc;
-  padding-top: 33px;
-}
-nav p {
-  word-spacing: 30px;*/
 
 .slogan h1 {
   font-weight: bold;
@@ -731,7 +710,7 @@ aside img {
   }
 }
 /* responsive version tablette*/
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 668px) and (max-width: 1024px) {
   body {
     width: auto;
     margin: 0px;
@@ -739,24 +718,81 @@ aside img {
     box-sizing: border-box;
   }
   #bloc_page {
-    margin-right: 5px;
-    padding-left: 5px;
-    width: 150%;
+    margin: 0px;
+    padding: 0px;
   }
   /* entête*/
+
   header {
-    width: 150%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
   }
+  #logo {
+    margin-top: 20px;
+  }
+  #logo img {
+    margin-left: 20px;
+  }
+  #ancres {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #filtres {
+    width: 70%;
+  }
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    width: 100%;
+    padding: 0px;
+  }
+
+  nav li {
+    width: 50%;
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 10px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  nav span {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 20%;
+  }
+
+  nav a:hover {
+    padding-top: 37px;
+  }
+
+  nav li a:hover {
+    border-top: none;
+  }
+
+  nav li:hover {
+    border-color: #0065fc;
+    color: #0065fc;
+  }
+
   /* bloc recherche*/
   .slogan {
     margin-left: 20px;
   }
   .barre_de_recherche {
-    padding-left: 25px;
+    padding-left: 20px;
     padding-right: 0px;
   }
-  #search {
+  #text_rechercher {
     display: none;
+  }
+  #search {
+    display: block;
   }
   #bouton {
     width: 20%;
@@ -787,51 +823,22 @@ aside img {
 
   /* bloc hébergement*/
   .main {
+    flex-direction: column-reverse;
     margin: 0;
     width: 100%;
   }
   #hebergements {
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    padding: 20px 0 0 20px;
-    width: 65%;
-  }
-
-  article {
-    display: flex;
     flex-direction: column;
+    background-color: white;
+    width: 87%;
   }
-
-  article img {
-    object-fit: cover;
+  .hebergements h2 {
+    margin: 0px;
+    margin-bottom: 15px;
   }
-
-  #hebergements a {
-    text-decoration: none;
-    color: black;
-  }
-
-  #hebergements strong {
-    font-weight: bold;
-  }
-
-  #encarts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-right: 10px;
-    width: 100%;
-  }
-
-  #encarts figure {
-    width: 225px;
-    height: 100px;
-    border: 1px solid white;
-    box-shadow: 1px 1px 5px #7a7d7f; /*ou 0 4px 30px rgba(0 0 0 0.05)*/
-  }
-
-  .carte {
-    margin-bottom: 50px;
+  .hebergements figure {
+    margin: 0px;
+    margin-bottom: 10px;
   }
   #photo_cannebiere,
   #photo_hduport,
@@ -839,13 +846,12 @@ aside img {
   #photo_hdelamer,
   #photo_lepanier,
   #photo_hamina {
-    width: 225px;
-    height: 100px;
-    border: 3px solid white;
+    width: 200px;
   }
   .viewmore {
-    margin-right: 50px;
-    margin-top: 25px;
+    margin-left: 0px;
+    padding-top: 15px;
+    margin-right: 80px;
   }
   /* bloc plus populaires*/
   #pluspopulaires {
@@ -854,40 +860,19 @@ aside img {
   }
   #pluspopulaires h2 {
     margin: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   #pluspopulaires figure {
     margin: 0px;
-    margin-top: 60px;
-    padding-bottom: 40px;
+    margin-bottom: 10px;
   }
   .hostingpopular {
     border-radius: 0px;
-  }
-  #photo_hsoleilmatin,
-  #photo_aucoeurleau,
-  #photo_htoutbleublanc {
-    width: 150px;
-    height: 130px;
-    border: 3px solid white;
-  }
-  #encarts2 figure {
-    width: 200px;
-    height: 80px;
-    border: 1px solid white;
-    border-radius: 20px;
-    box-shadow: 1px 1px 6px #7a7d7f;
-  }
-  aside img {
-    object-fit: cover;
-    float: left;
-    left: 100px;
+    width: 50%;
   }
   /*bloc activité*/
-
   .activitesmarseille {
-    padding-top: 40px;
-    width: 100%;
+    padding-top: 55px;
   }
   .activitesmarseille h2 {
     margin: 0px;
@@ -899,91 +884,51 @@ aside img {
     margin-bottom: 10px;
     margin-left: 20px;
   }
-  #photo_activites {
-    width: 100%;
-  }
-  /*tailles images*/
-  #photo_vieuxport {
-    width: 250px;
-    height: 350px;
-  }
+  #photo_vieuxport,
   #photo_fortpomegues,
-  #photo_parclongchamp {
-    width: 250px;
-    height: 120px;
-  }
+  #photo_parclongchamp,
   #photo_ilesfrioul,
-  #photo_notredamegarde {
-    width: 250px;
-    height: 120px;
-  }
+  #photo_notredamegarde,
   #photo_parccalanques {
-    width: 250px;
-    height: 350px;
+    width: 600px;
+    height: 110px;
   }
-
   #description1,
-  #description4 {
-    width: 250px;
-    height: 30px;
-    border: 3px solid #f2f2f2;
-    border-radius: 0 0 20px 20px;
-    color: black;
-    background-color: white;
-  }
   #description2,
   #description3,
+  #description4,
   #description5,
   #description6 {
-    width: 250px;
+    width: 600px;
     height: 30px;
-    border: 3px solid #f2f2f2;
-    border-radius: 0 0 20px 20px;
-    color: black;
-    background-color: white;
   }
-
   #figure2 {
-    padding-left: 300px;
-    margin-top: -200px;
+    padding-left: 0px;
+    margin-top: 0px;
   }
   #figure3 {
-    padding-left: 300px;
-    margin-top: 40px;
+    padding-left: 0px;
+    margin-top: 0px;
   }
   #figure4 {
-    padding-left: 600px;
-    margin-top: -410px;
+    padding-left: 0px;
+    margin-top: 0px;
   }
   #figure5 {
-    padding-left: 900px;
-    margin-top: -200px;
+    padding-left: 0px;
+    margin-top: 0px;
   }
   #figure6 {
-    padding-left: 900px;
-    margin-top: 40px;
+    padding-left: 0px;
+    margin-top: 0px;
   }
   /*footer*/
-  .renseignement {
-    height: 150px;
-    border: 1px solid white;
-    margin-top: 50px;
-    background-color: #f2f2f2;
-    margin-bottom: 10px;
-  }
-  .pied_de_page ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  .pied_de_page a {
-    text-decoration: none;
-    color: black;
-  }
   .pied_de_page {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 500px;
-    margin-left: 50px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .renseignement {
+    width: 100%;
+    height: 350px;
   }
 }
