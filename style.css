@@ -132,7 +132,7 @@ input {
 }
 
 #titre {
-  padding-top: 10px;
+  padding-top: 3px;
   margin-right: 20px;
 }
 
@@ -191,7 +191,7 @@ input {
   display: flex;
   justify-content: space-between;
 }
-.main h2 {
+.main h3 {
   margin-left: 43px;
 }
 
@@ -377,7 +377,7 @@ aside img {
   background-color: white;
 }
 
-.hostingpopular a {
+aside a {
   text-decoration: none;
   color: black;
 }
@@ -395,7 +395,7 @@ aside img {
   text-decoration: none;
   color: black;
 }
-.activitesmarseille h2 {
+.activitesmarseille h3 {
   margin-left: 50px;
 }
 #photo_activites img {
@@ -609,7 +609,7 @@ aside img {
     background-color: white;
     width: 100%;
   }
-  .hebergements h2 {
+  .hebergements h3 {
     margin: 0px;
     margin-bottom: 15px;
   }
@@ -635,7 +635,7 @@ aside img {
     flex-direction: column;
     width: 100%;
   }
-  #pluspopulaires h2 {
+  #pluspopulaires h3 {
     margin: 0px;
     margin-bottom: 15px;
   }
@@ -643,7 +643,7 @@ aside img {
     margin: 0px;
     margin-bottom: 10px;
   }
-  .hostingpopular {
+  aside {
     border-radius: 0px;
     width: 100%;
   }
@@ -651,7 +651,7 @@ aside img {
   .activitesmarseille {
     padding-top: 55px;
   }
-  .activitesmarseille h2 {
+  .activitesmarseille h3 {
     margin: 0px;
     margin-bottom: 15px;
     margin-left: 20px;
@@ -832,7 +832,7 @@ aside img {
     background-color: white;
     width: 87%;
   }
-  .hebergements h2 {
+  .hebergements h3 {
     margin: 0px;
     margin-bottom: 15px;
   }
@@ -858,7 +858,7 @@ aside img {
     flex-direction: column;
     width: 100%;
   }
-  #pluspopulaires h2 {
+  #pluspopulaires h3 {
     margin: 0px;
     margin-bottom: 15px;
   }
@@ -866,7 +866,7 @@ aside img {
     margin: 0px;
     margin-bottom: 10px;
   }
-  .hostingpopular {
+  aside {
     border-radius: 0px;
     width: 50%;
   }
@@ -874,7 +874,7 @@ aside img {
   .activitesmarseille {
     padding-top: 55px;
   }
-  .activitesmarseille h2 {
+  .activitesmarseille h3 {
     margin: 0px;
     margin-bottom: 15px;
     margin-left: 20px;
